@@ -1,8 +1,7 @@
 title: The Collective
-tagline: A collective that focuses on shared growth
 description: A collective that focuses on shared growth
 url: https://resume.adityashankar.xyz
 baseurl: /the-collective
-remote_theme: poole/lanyon
+remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
