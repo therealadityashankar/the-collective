@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /about/
+title: About
 ---
 
 # The yet-to-be-named collective

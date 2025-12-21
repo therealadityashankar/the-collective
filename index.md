@@ -1,8 +1,7 @@
 ---
 layout: home
+title: Home
 ---
-
-# The yet-to-be-named collective
 
 A collective, that focuses on shared growth
 
