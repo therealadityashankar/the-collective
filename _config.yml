@@ -1,7 +1,7 @@
 title: The Collective
 description: A collective that focuses on shared growth
-url: https://resume.adityashankar.xyz
-baseurl: /the-collective
+url: https://collective.river.berlin
+baseurl: ""
 remote_theme: jekyll/minima@d4d779a
 # Minima requires the following plugins:
 plugins:
