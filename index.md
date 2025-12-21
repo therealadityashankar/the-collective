@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 # The yet-to-be-named collective
