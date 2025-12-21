@@ -23,6 +23,11 @@ I am actually very very optimistic with regard to the growth of collective servi
 
 - I've no clue, I guess I started by creating this webpage, it runs on something called markdown goto https://github.com/therealadityashankar/the-collective, simply edit the page and you should get an overview on how it works, here's a [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-- I have a ton of friends
+- I have a ton of friends in a group chat, so let's see if anything actually manifests :)
 
 - I probably should start reading books on better structural planning, to see the things that can be collectively done better
+
+## Stuff we probably have to collectively read and learn
+
+- [Non-violent communication](https://en.wikipedia.org/wiki/Nonviolent_Communication) (for calmer interactions)
+
