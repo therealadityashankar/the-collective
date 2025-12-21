@@ -2,6 +2,12 @@ title: The Collective
 description: A collective that focuses on shared growth
 url: https://resume.adityashankar.xyz
 baseurl: /the-collective
-remote_theme: jekyll/minima
+remote_theme: jekyll/minima@d4d779a
+# Minima requires the following plugins:
 plugins:
-  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
