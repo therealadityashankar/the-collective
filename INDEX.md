@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # The yet-to-be-named collective
 
 A collective, that focuses on shared growth
