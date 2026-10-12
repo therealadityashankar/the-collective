@@ -4,7 +4,7 @@
 .embedded header,.embedded .notes{display:none}.embedded .layout{min-height:0}.embedded canvas{height:570px}@media(max-width:780px){.embedded canvas{height:470px}}
 </style></head><body>
 <header><div><div class="eyebrow">A future together / Berlin</div><h1>Common Ground</h1><p>A modest home. Shared resources. Room to experiment.</p></div><div class="stamp">COMMUNE STUDY · CONCEPT 01</div></header>
-<div class="layout"><aside><div class="eyebrow">Explore the building</div><h2>One place, many lives.</h2><nav class="floor-nav" aria-label="Building floors" id="floors"></nav><p class="aside-note">Three storeys + two cellar levels.<br>24 × 16 m conceptual footprint.<br>24 private suites: 4 on the ground floor, 10 on each upper floor. Illustrative 24–48 residents depending on household size. 80 bike spaces: 48 indoors + 32 outside.<br><br>The farm sits beside the home, keeping water tanks and equipment close to ground level.</p></aside><main class="stage"><canvas id="model" aria-label="Interactive three dimensional commune model. Use floor buttons, drag to rotate, scroll to zoom." tabindex="0"></canvas><div class="tools"><button id="roof-mode" aria-pressed="false">☀ Open rooftop terrace</button><button id="explode" aria-pressed="false">Separate floors</button><button id="plan" aria-pressed="false">Top view</button><button id="reset">Reset view</button><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div><div class="hint">Drag to orbit · scroll to zoom · click a room · arrow keys to rotate</div><div class="roof-status" id="roof-status" role="status">Solar roof · planted borders</div><div class="scale">Schematic · not construction drawings</div></main></div>
+<div class="layout"><aside><div class="eyebrow">Explore the building</div><h2>One place, many lives.</h2><nav class="floor-nav" aria-label="Building floors" id="floors"></nav><p class="aside-note">Three storeys + two cellar levels.<br>24 × 16 m conceptual footprint.<br>24 private suites: 4 on the ground floor, 10 on each upper floor. Illustrative 24–48 residents depending on household size. 80 bike spaces: 48 indoors + 32 outside.<br><br>The farm sits beside the home, keeping water tanks and equipment close to ground level.</p></aside><main class="stage"><canvas id="model" aria-label="Interactive three dimensional commune model. Use floor buttons, drag to rotate, scroll to zoom." tabindex="0"></canvas><div class="tools"><button id="roof-mode" aria-pressed="false">☀ Open rooftop terrace</button><button id="explode" aria-pressed="false">Separate floors</button><button id="plan" aria-pressed="false">Top view</button><button id="reset">Reset view</button><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div><div class="hint">Drag to orbit · scroll to zoom · click a room · arrow keys to rotate</div><div class="roof-status" id="roof-status" role="status">Solar roof · rooftop grove</div><div class="scale">Schematic · not construction drawings</div></main></div>
 <section class="details" aria-live="polite"><div><div class="eyebrow" id="kicker"></div><h2 id="title"></h2><p id="description"></p><div id="rooms" aria-label="Room details"></div></div><div><div class="eyebrow">Selected space</div><h2 id="room-title"></h2><p id="room-description"></p><div class="stats"><div><strong>3</strong>above-ground storeys</div><div><strong>2</strong>cellar levels</div><div><strong>24</strong>private suites</div><div><strong>80</strong>bike spaces</div></div></div></section>
 <details class="notes"><summary>Realistic assumptions behind the concept</summary><ol><li><b>Ground and height:</b> three storeys are a design preference, not a Berlin soil limit. Foundations depend on the plot's layers, groundwater and building loads. Two schematic cellar levels are included, approximately 3.3 m and 6.6 m below the ground-floor level. This is a design choice, not a Berlin-wide basement-depth limit. Its depth and footprint are illustrative, and foundation dimensions are not specified. Feasibility, waterproofing, groundwater pressure, uplift, excavation and ventilation need site-specific design. A real project needs a site-specific geotechnical investigation, structural design and planning review. <a href="https://www.berlin.de/sen/uvk/umwelt/wasser-und-geologie/geologie/baugrund/" target="_blank" rel="noopener">Berlin: building ground</a> · <a href="https://www.berlin.de/sen/uvk/umwelt/wasser-und-geologie/grundwasser/informationen-zum-grundwasser/" target="_blank" rel="noopener">Berlin: groundwater</a>.</li><li><b>Automation:</b> the kitchen is conventional. The farm and proposed laundry-bag handling remain future-facing experiments; cleaning and maintenance still need human oversight. The farm supplements food purchases; it is not assumed to feed everyone.</li><li><b>Energy:</b> the folding solar roof is speculative. Printed solar is not automatically foldable: a real design would need modules with a validated bend radius, suitable encapsulation, electrical connections, hinges, wind restraints, and safe operating clearances. No price saving, output, or energy-autonomy claim is made.</li><li><b>Layout:</b> half the solar field folds toward the edge to release terrace space. The railings are schematic tall guards with spaces between upright bars; actual height and spacing need professional design. A lift and two stair cores are reserved; their sizes, escape routes, accessibility, services, fire separation, and roof loads still need professional design. The suite count and occupancy are illustrative. All 24 suites remain above ground; basement services free living space upstairs. The deep indoor bike garage needs a suitably sized lift and practical access. A separate walking-bike ramp annex illustrates an 8% route down to both basement levels, with 82.5 m of sloping run plus level landings. It is not certified as wheelchair accessible and needs drainage, weather protection and detailed usability design.</li><li><b>Word choice:</b> “Gemeinschaft” or “Kommune” fits the community you describe. “Gesellschaft” can mean society or a company.</li></ol><p><b>Facade gallery — four walls, four themes.</b> These are my thematic readings for the community, rather than claims about the artists' intended meanings:</p><ol>
 <li><b>Growth & connection:</b> Hilma af Klint, <i>Tree of Knowledge, No. 1</i> (1913), front wall. Intertwining roots, branches and organic forms. <a href="https://www.guggenheim.org/audio/track/tree-of-knowledge-no-1-1913-by-hilma-af-klint" target="_blank" rel="noopener">Artwork source</a>.</li>
@@ -23,7 +23,7 @@ const levels=[
 {key:0,short:'EG',name:'Homes & common life',sub:'4 suites · kitchen · dining',title:'Half shared life, half private homes.',text:'The west half holds a regular shared kitchen, dining hall and common hall. The east half contains four larger private suites. Laundry and the repair workshop are now in KG1, leaving the ground floor for people. The central corridor connects two stairs and the lift.'},
 {key:1,short:'01',name:'Private homes',sub:'10 compact suites',title:'Ten private homes on one floor.',text:'Five compact suites on each side of the central corridor, with sleeping space, a bathroom zone and a small kitchenette. Shared living space is concentrated downstairs to reserve more of the upper floors for housing. This is an illustrative area layout, not a final occupancy approval.'},
 {key:2,short:'02',name:'Private homes',sub:'10 compact suites',title:'Another ten homes above.',text:'The second residential level repeats the compact ten-suite layout. In total, four ground-floor suites plus twenty upper-floor suites make 24 private homes. All sleeping accommodation stays above ground.'},
-{key:3,short:'RF',name:'Roof & energy',sub:'Folding solar · terrace',title:'Sunlight put to work.',text:'A solar roof bordered with plants transforms into a social terrace. Half the panel field accordion-folds toward the roof edge, then a table and chairs rise into the cleared space. This is an imagined mechanism for future flexible solar modules.'},
+{key:3,short:'RF',name:'Roof & energy',sub:'Folding solar · terrace',title:'Sunlight put to work.',text:'A rooftop grove of spruce, birch, oak, red maple and flowering cherry frames the solar field and a transforming social terrace. Half the panel field accordion-folds toward the roof edge, then a table and chairs rise into the cleared space. This is an imagined mechanism for future flexible solar modules.'},
 {key:'farm',short:'GR',name:'Food garden',sub:'Greenhouse · robot beds',title:'Grow food, learn together.',text:'A separate greenhouse and outdoor raised beds form a small cultivation pilot. A gantry robot illustrates sowing, watering and monitoring. Start with herbs and leafy greens; do not assume full food self-sufficiency.'}
 ];
 const descriptions={
@@ -50,7 +50,7 @@ const descriptions={
 'Cycle overflow':'16 further indoor bike bays in KG2: 48 indoor spaces in total. A central lift is reserved for bringing bicycles down, rather than expecting residents to carry them two flights.',
 'Outdoor bike parking':'16 inverted-U stands with two intended parking positions each: 32 outdoor spaces. Indoor and outdoor parking total 80 illustrative spaces.',
 'Bike access':'An 8% walking-bike ramp in a side annex: four flights, level turning landings and level galleries connecting into KG1 and KG2. Its 82.5 m sloping run makes the space trade-off explicit. Walking only; the lift remains an alternative. Drainage, weather protection, headroom and usability need real design.',
-'Roof planting':'Low planted boxes frame the solar field with grasses, herbs and small flowering shrubs. Panel rows are inset to make room for the planting and perimeter circulation. Species, irrigation and roof loads still need design.',
+'Roof planting':'Eight prominent trees form a rooftop grove: three layered spruces inspired by the reference, two white-barked birches, a broad oak, a red maple and a flowering cherry. Integrated garden beds replace the small pots. This is an aesthetic concept: root space, saturated soil loads, wind anchorage and shade on the panels need structural and landscape design.',
 'Facade masks':'Eight stylised sculpted face medallions, warm brass rings, corner pilasters and layered cornices give the building a ceremonial character. The faces sit on the bands between windows.',
 'Water & tools':'A ground-level service area for irrigation equipment and gardening tools. Rainwater reuse would need a properly designed system.'};
 const C={wood:'#c6a785',wall:'#e7e0cc',slab:'#d4d4be',green:'#6b9564',dark:'#41614c',glass:'#aecac0',blue:'#496977',bed:'#d2b69a',metal:'#7c8580',soil:'#a6916e'};
@@ -197,6 +197,46 @@ function ground(){
  for(const x of [.15,6.15])for(const z of [-8,2.3])suite(x,z,5.7,0);
  room(-12,-2.1,24,4.2,'Circulation',0,'#e9e7d7');cores(0);
 }
+// Branch-based crowns, rather than stacked boxes, distinguish the rooftop species.
+function roofTree(x,base,z,species,height){
+ const room='Roof planting',f=3,h=height,at=(dx,y,dz)=>[x+dx,base+y,z+dz];
+ const limb=(a,b,w,color)=>beam(at(...a),at(...b),w,color,room,f);
+ const crown=(dx,y,dz,rx,ry,rz,color)=>ellipsoid(x+dx,base+y,z+dz,rx,ry,rz,color,room,f);
+ const bark=species==='birch'?'#eee5ce':'#79583e';
+ limb([0,0,0],[.08,h*.94,.04],species==='oak'?.28:.17,bark);
+ if(species==='spruce'){
+  // Irregular whorls with exposed branches and tapered, drooping needle fans.
+  const colors=['#315b3d','#47794c','#5b8c4c','#739e54'];
+  for(let tier=0;tier<10;tier++){
+   const y=h*(.21+tier*.071),radius=h*.265*(1-tier/11);
+   for(let k=0;k<7;k++){
+    const a=k*Math.PI*2/7+tier*.53,reach=radius*(.84+.16*Math.sin(k*7+tier*4));
+    const dx=Math.cos(a)*reach,dz=Math.sin(a)*reach,tip=y-.19-reach*.13;
+    limb([0,y,0],[dx,tip,dz],.045, bark);
+    for(const spread of [-.3,0,.3]){
+     const ca=a+spread,side=.19+reach*.14;
+     const mid=at(Math.cos(ca)*reach*.48,y+.17,Math.sin(ca)*reach*.48),end=at(Math.cos(ca)*reach,tip,Math.sin(ca)*reach);
+     const left=at(mid[0]-x-Math.sin(ca)*side,y-.12,mid[2]-z+Math.cos(ca)*side),right=at(mid[0]-x+Math.sin(ca)*side,y-.12,mid[2]-z-Math.cos(ca)*side);
+     quad([mid,left,end,end],colors[(tier+k)%4],room,f);quad([mid,end,right,right],colors[(tier+k+1)%4],room,f);quad([left,right,end,end],colors[(tier+k+2)%4],room,f);
+    }
+   }
+  }
+  crown(.08,h*.955,.04,.19,h*.085,.19,'#689754');
+ }else{
+  const palettes={birch:['#8cac59','#a5bd6b','#bdd087'],oak:['#476f46','#658b50','#83a366'],maple:['#843f42','#b25e49','#d28a54'],cherry:['#b87994','#df9fb6','#f0c1cd']};
+  const colors=palettes[species],wide=species==='oak'?1.8:species==='birch'?1.13:1.55;
+  if(species==='birch'){
+   limb([.03,h*.16,0],[.55,h*.91,.12],.10,bark);
+   for(let i=0;i<8;i++)limb([-.07,h*(.10+i*.105),-.025],[.08,h*(.10+i*.105)+.035,.045],.045,'#6d665b');
+  }
+  for(let k=0;k<9;k++){
+   const a=k*2.4,y=h*(.48+(k%3)*.135),reach=wide*(k%3===2?.64:1),dx=Math.cos(a)*reach,dz=Math.sin(a)*reach;
+   limb([.04,h*.34,0],[dx,y,dz],.065,bark);
+   crown(dx,y+.3,dz,wide*.68,h*.15,wide*.64,colors[k%3]);
+  }
+  crown(.1,h*.89,0,wide*.7,h*.13,wide*.66,colors[2]);
+ }
+}
 function roof(){
  const y=9.9+(exploded?10.8:0),surface=y+.2;
  box(-12,y,-8,24,.2,16,'#d4ddc7','Roof terrace',3);
@@ -218,12 +258,14 @@ function roof(){
  if(furniture>0){table(4,fy,-.4,3.2,1.5);for(const [x,z] of [[4.15,-1.5],[5.75,-1.5],[4.15,1.7],[5.75,1.7],[2.9,.05],[7.7,.05]]){
   box(x,fy,z,.7,.45,.7,C.wood,'Roof terrace',3);box(x,fy+.45,z,.7,.10,.7,C.dark);box(x,fy+.55,z+.59,.7,.62,.10,C.dark);
  }}
- function planter(x,z,w,d,index){
-  box(x,surface,z,w,.42,d,'#b8a887','Roof planting',3);box(x+.08,surface+.42,z+.08,w-.16,.06,d-.16,C.soil);
-  for(let k=0;k<3;k++){const xx=x+.25+(w-.5)*k/2;ellipsoid(xx,surface+.7,z+d/2,.22,.3,.22,index%2?'#80966b':'#6a8765','Roof planting',3);if(index%3===0)box(xx-.065,surface+1.02,z+d/2-.065,.13,.10,.13,'#ba9d90')}
+ // Eight substantial trees in inset garden beds; all geometry shares the roof offset.
+ const roofTrees=[[-10.45,-6.85,'spruce',6.5],[-3.6,-6.85,'birch',5.3],[3.7,-6.85,'spruce',5.5],[10.45,-6.85,'maple',4.7],[-10.45,6.85,'oak',5.2],[-3.6,6.85,'cherry',4.4],[3.7,6.85,'birch',5.7],[10.45,6.85,'spruce',7.0]];
+ for(const [x,z,species,height] of roofTrees){
+  box(x-1.2,surface,z-.9,2.4,.55,1.8,'#c5bd9f','Roof planting',3);
+  box(x-1.12,surface+.55,z-.82,2.24,.06,1.64,C.soil,'Roof planting',3);
+  roofTree(x,surface+.61,z,species,height);
+  for(const side of [-1,1])ellipsoid(x+side*.85,surface+.72,z+.45,.32,.2,.25,'#8caa6a','Roof planting',3);
  }
- for(let i=0;i<6;i++)for(const z of [-7.4,6.6])planter(-10.8+i*3.7,z,2.7,.65,i);
- for(let i=0;i<4;i++)for(const x of [-11.55,10.8])planter(x,-4.6+i*3.1,.7,2.3,i+1);
  // Continuous handrails and vertical balusters: open spaces, no wall-like parapet.
  const rail='#a58e60';for(const z of [-7.9,7.9]){
   box(-12,surface+1.46,z,24,.09,.09,rail);
@@ -359,7 +401,7 @@ function updateRoofStatus(){
  const moving=Math.abs(solarT-solarTarget)>.001;
  $('roof-mode').textContent=solarTarget?'☀ Restore full solar roof':'☀ Open rooftop terrace';
  $('roof-mode').setAttribute('aria-pressed',String(!!solarTarget));
- $('roof-status').textContent=moving?(solarTarget?'Folding solar modules · making room…':'Deploying solar modules…'):(solarT>.99?'Terrace open · half the solar field remains':'Solar roof · planted borders');
+ $('roof-status').textContent=moving?(solarTarget?'Folding solar modules · making room…':'Deploying solar modules…'):(solarT>.99?'Terrace open · half the solar field remains':'Solar roof · rooftop grove');
 }
 function toggleRoof(){
  if(selected!=='all'&&selected!==3)select(3);
