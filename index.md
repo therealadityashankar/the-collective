@@ -11,8 +11,8 @@ A collective, that focuses on shared growth
 Explore a future home for the collective: private suites, shared spaces, a growing pavilion, a planted solar roof and walk-your-bike access to the basements.
 
 <div class="collective-building-preview" style="margin: 1.5rem 0;">
-  <iframe id="collective-building" src="{{ '/assets/building.html' | relative_url }}?embed=1" title="Interactive 3D design of a possible home for The Collective" loading="lazy" style="display:block;width:100%;height:1150px;border:1px solid #d5daca;border-radius:10px;background:#f5f3eb;"></iframe>
-  <p style="margin-top:.75rem;"><a href="{{ '/assets/building.html' | relative_url }}" target="_blank" rel="noopener">Explore the building in a full window →</a></p>
+  <iframe id="collective-building" src="{{ '/assets/building.html' | relative_url }}?embed=1&amp;v={{ site.time | date: '%s' }}" title="Interactive 3D design of a possible home for The Collective" loading="lazy" style="display:block;width:100%;height:1150px;border:1px solid #d5daca;border-radius:10px;background:#f5f3eb;"></iframe>
+  <p style="margin-top:.75rem;"><a href="{{ '/assets/building.html' | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">Explore the building in a full window →</a></p>
 </div>
 <script>
 (function () {
